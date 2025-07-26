@@ -1,6 +1,6 @@
 const http = require('http');
 const { URL } = require('url');
-const math = require('./mathUtils'); 
+const math = require('./mathutils'); 
 const server = http.createServer((req, res) => {
     const requestUrl = new URL(req.url, `http://${req.headers.host}`);
     const pathname = requestUrl.pathname;
